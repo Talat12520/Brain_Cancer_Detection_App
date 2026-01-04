@@ -44,7 +44,8 @@ def load_classification_model():
 def load_segmentation_model():
     return tf.keras.models.load_model(
         "models/brain_tumor_segmentation_unet.keras",
-        compile=False
+        compile=False,
+        safe_mode=False
     )
 
 

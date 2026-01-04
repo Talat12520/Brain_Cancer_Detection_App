@@ -1,0 +1,6 @@
+streamlit
+torch
+torchvision
+tensorflow==2.15.0
+numpy
+pillow

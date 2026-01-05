@@ -43,10 +43,10 @@ def load_classification_model():
 @st.cache_resource
 def load_segmentation_model():
     return tf.keras.models.load_model(
-        "models/brain_tumor_segmentation_unet.keras",
-        compile=False,
-        safe_mode=False
+        "models/segmentation_cloud.keras",
+        compile=False
     )
+
 
 
 clf_model = load_classification_model()
@@ -165,3 +165,4 @@ if uploaded_file:
         )
     else:
         st.success("No tumor detected. Segmentation skipped.")
+

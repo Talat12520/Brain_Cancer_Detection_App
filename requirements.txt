@@ -1,6 +1,8 @@
 streamlit==1.32.2
 torch
 torchvision
-tensorflow==2.15.0
+tensorflow
 numpy
+opencv-python
 pillow
+scikit-learn
